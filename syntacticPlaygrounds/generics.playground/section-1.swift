@@ -4,13 +4,13 @@ import UIKit
 
 //declaring a generic structure
 struct Stack<T> {
-    var elements = T[]() //declaration of generic array
+    var elements = T[]() //generic array
     
-    mutating func push(element:T) { //declaration of generic parameter
+    mutating func push(element:T) { //generic parameter
         elements.append(element)
     }
     
-    mutating func pop() -> T {
+    mutating func pop() -> T {  //generic return type
         return elements.removeLast()
     }
 }
